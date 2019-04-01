@@ -21,7 +21,7 @@ export default class Contact extends Component {
   }
 
   onDeleteClick = async (id, dispatch) => {
-    await axios.delete(`http://jsonplaceholder.typicode.com/users/${id}`);
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
 
     dispatch({
       type: 'DELETE_CONTACT',
